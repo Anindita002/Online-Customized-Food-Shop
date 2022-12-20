@@ -1,7 +1,25 @@
 Online Customized Food Shop is a website where the customers can customize food according to their preferences. I have used Laravel framework for this project which follows the MVC pattern.
 
 MVC Structure: [Models](https://github.com/Anindita002/Online-Customized-Food-Shop/tree/master/app/Models)|[View](https://github.com/Anindita002/Online-Customized-Food-Shop/tree/master/resources/views)|[Controllers](https://github.com/Anindita002/Online-Customized-Food-Shop/tree/master/app/Http/Controllers)
-
+There will be two types of users: Customers and Admin.
+Customers can perform the following features:
+Registration.
+Login.
+View the profile details.
+View the Menu.
+Add food item to the cart.
+View the food items in the cart.
+Remove food item from the cart.
+Place Order which includes providing name,phone number,address and select the payment method and confirm the order.
+Admin can perform the following features:
+Registration.
+Login.
+View the profile details.
+View the users and can delete the customers but one admin cannot delete other admin.
+Add new food item to the menu.
+Delete food item from the menu.
+Edit the food item details.
+See the order details and search for particular order using name.
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
