@@ -1,4 +1,4 @@
-<!-- ***** Menu Area Starts ***** -->
+<!-- ***** Menu Area Starts ***** --> -->
 <section class="section" id="menu">
         <div class="container">
             <div class="row">
@@ -16,10 +16,11 @@
 
 
                 @foreach($data as $data)
-
+                <form action="{{url('/addcart',$data->id)}}" method="post">
+                @csrf
                     <div class="item" >
                         <div style="background-image: url('/foodimage/{{$data->image}}'); "class='card'>
-                            <div class="price"><h6>TK{{$data->price}}</h6></div>
+                            <div class="price"><h6>{{$data->priceTK}}</h6></div>
                             <div class='info'>
                               <h1 class='title'>{{$data->title}}</h1>
                            
@@ -28,13 +29,19 @@
                               </div>
                             </div>
                         </div>
+                        
+                        <input type="number" name="quantity" min="1" value="1" style="width: 80px">
+                        <input type="submit" value="add cart">
+
+
                     </div>
+</form>
                     @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ***** Menu Area Ends ***** -->
+    <!-- ***** Menu Area Ends *****
 
 

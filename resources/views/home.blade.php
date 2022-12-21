@@ -47,6 +47,9 @@
                         <!-- ***** Logo Start ***** -->
                       <a href="index.html" class="logo"> 
                              <img src="assets/images/foodlogo.png" align="klassy cafe html template">
+                             <a  class="menu-trigger">
+                                <span>Menu</span>
+                            </a>
                          </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -57,7 +60,16 @@
                         
                             
                             <li class="scroll-to-section"><a href="#menu">Menu</a></li>
-                            
+                            <li class="scroll-to-section" style="background-color: red;">
+                             @auth 
+                             <a href="{{url('/showcart',Auth::user()->id);}}">  
+                            Cart[{{$count}}]
+                            </a>
+                            @endauth
+                            @guest
+                            Cart[0]
+                            @endguest
+                        </a></li>
                             
                         
                        <li>
